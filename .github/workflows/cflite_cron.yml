@@ -38,3 +38,8 @@ jobs:
           fuzz-seconds: 300 # 5 minutes
           mode: ${{ matrix.mode }}
           sanitizer: ${{ matrix.sanitizer }}
+          # Optional but recommended: For storing certain artifacts from fuzzing.
+          # See later section on "Git repo for storage".
+          storage-repo: https://${{ secrets.PERSONAL_ACCESS_TOKEN }}@github.com/qbLedger/app-aptos-corpus.git
+          storage-repo-branch: main   # Optional. Defaults to "main"
+          storage-repo-branch-coverage: gh-pages  # Optional. Defaults to "gh-pages".
