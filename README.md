@@ -1,3 +1,5 @@
+TEST
+
 # Ledger Aptos Application
 
 Aptos wallet application supporting the following Ledger devices:
